@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-content">
+        <div class="cards">
+            <div class="card-front">
+                <div class="dados">
+                    <div class="card-text">
+                        <h1 class="text text-title">card</h1>
+                    </div>
+                    <div class="card-number">
+                        <p class="text" id="card-number">0000 0000 0000 0000</p>
+                        <span class="text-span">numero do cartao</span>
+                    </div>
+                    <div class="card-holder">
+                        <p class="text" id="holder">Taldo fernades da silva</p>
+                        <span class="text-span">nome do titular</span>
+                    </div>
+                    <div class="card-expiration">
+                        <p class="text" id="expiration">00/00</p>
+                        <span class="text-span">validade</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="card-text back">
+                    <h1 class="text text-title">card</h1>
+                </div>
+                <div class="cvv">
+                    <p class="text" id="cvv">000</p>
+                    <span class="text-span">cvv</span>
+                </div>
+            </div>    
+        </div>
+        <div class="card-form">
+            <form action="">
+                <label for="input">numero do cartao</label>
+                <input id="card-value" type="text" name="card" maxlength="16" OnKeyPress="formatar('##-####-####')" >
+                <label for="data">data de validade</label>
+                <input id="data" type="text">
+                <label for="name">nome do cartão</label>
+                <input id="name" type="text">
+                <label for="cvv">cvv</label>
+                <input id="cvv" type="text">
+                <button type="button" id="btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
