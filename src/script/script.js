@@ -1,4 +1,4 @@
-import cardValidator from "./index.js";
+import cardValidator from "./LuCard.js";
 
 const cardNumber = document.querySelector('#card-value');
 const dataCard = document.querySelector("#data-card");
@@ -60,7 +60,7 @@ function verificationCardNumber () {
             newCardNumber = newCardNumber.replace(" ", "");
         }
     }
- //   console.log(newCardNumber)
+  console.log(newCardNumber)
 
     let border =(cardValidator(newCardNumber) ? "2.5px white solid" : "2.5px red solid")
     cardNumber.style.border = border; 
