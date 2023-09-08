@@ -15,7 +15,7 @@
                         <h1 class="text text-title">card</h1>
                     </div>
                     <div class="card-number">
-                        <p class="text" id="card-number">0000 0000 0000 0000</p>
+                        <p class="text" id="number-card">0000 0000 0000 0000</p>
                         <span class="text-span">numero do cartao</span>
                     </div>
                     <div class="card-holder">
@@ -41,17 +41,29 @@
         <div class="card-form">
             <form action="">
                 <label for="input">numero do cartao</label>
-                <input id="card-value" type="text" name="card" maxlength="16" OnKeyPress="formatar('##-####-####')" >
+                <input id="card-value" type="text" maxlength="19" OnKeyPress="formatar('0000 0000 0000 0000', this)" >
                 <label for="data">data de validade</label>
-                <input id="data" type="text">
+                <input id="data" type="text" maxlength="5"  OnKeyPress="formatar('00/00', this)">
                 <label for="name">nome do cartão</label>
                 <input id="name" type="text">
                 <label for="cvv">cvv</label>
-                <input id="cvv" type="text">
+                <input id="cvv" type="text" maxlength="3"  OnKeyPress="formatar('000', this)">
                 <button type="button" id="btn">Enviar</button>
             </form>
         </div>
     </div>
     <script type="module" src="./script.js"></script>
+    <script>
+        function formatar(mascara, documento){
+          var i = documento.value.length;
+          var saida = mascara.substring(0,1);
+          var texto = mascara.substring(i)
+          
+          if (texto.substring(0,1) != saida){
+                    documento.value += texto.substring(0,1);
+          }
+          
+        }
+        </script>
 </body>
 </html>

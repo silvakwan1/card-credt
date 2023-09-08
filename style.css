@@ -22,6 +22,7 @@ body{
     animation: linearGradient 5s infinite alternate;
 }
 .card-content{
+    margin-top: 100px;
     user-select: none;
     width: 300px;
     padding: 30px;
