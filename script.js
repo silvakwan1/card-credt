@@ -32,7 +32,7 @@ function renderCvvCard () {
 }
 
 function renderCardNumber(){
-    const textNumber = document.querySelector("#number-card");
+    const textNumber = document.querySelector(".number-card");
     cardNumber.value = cardNumber.value.replace(/[^0-9\s/]/g, '')
     let newCard = cardNumber.value;
 

@@ -135,6 +135,27 @@ body{
     transform: rotateY(-180deg);
     opacity: 0;
 }
+@media screen and (max-width: 460px){
+    .card-content{
+        margin-right: 40px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .cards{
+        width: 300px;
+        right: -50px;
+    }
+    .card-front{
+        column-gap: 20px;
+    }
+    .card-form form{
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 @keyframes linearGradient {
     0%{
         background-position: 0% 50%;
