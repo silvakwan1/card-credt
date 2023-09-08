@@ -15,15 +15,15 @@
                         <h1 class="text text-title">card</h1>
                     </div>
                     <div class="card-number">
-                        <p class="text" id="number-card">0000 0000 0000 0000</p>
+                        <p class="text number-card">0000 0000 0000 0000</p>
                         <span class="text-span">numero do cartao</span>
                     </div>
                     <div class="card-holder">
-                        <p class="text" id="holder">Taldo fernades da silva</p>
+                        <p class="text name">Taldo fernades da silva</p>
                         <span class="text-span">nome do titular</span>
                     </div>
                     <div class="card-expiration">
-                        <p class="text" id="expiration">00/00</p>
+                        <p class="text expiration">00/00</p>
                         <span class="text-span">validade</span>
                     </div>
                 </div>
@@ -32,22 +32,22 @@
                 <div class="card-text back">
                     <h1 class="text text-title">card</h1>
                 </div>
-                <div class="cvv">
-                    <p class="text" id="cvv">000</p>
+                <div class="cvv-contet">
+                    <p class="text cvv">000</p>
                     <span class="text-span">cvv</span>
                 </div>
             </div>    
         </div>
         <div class="card-form">
             <form action="">
-                <label for="input">numero do cartao</label>
-                <input id="card-value" type="text" maxlength="19" OnKeyPress="formatar('0000 0000 0000 0000', this)" >
-                <label for="data">data de validade</label>
-                <input id="data" type="text" maxlength="5"  OnKeyPress="formatar('00/00', this)">
-                <label for="name">nome do cartão</label>
-                <input id="name" type="text">
-                <label for="cvv">cvv</label>
-                <input id="cvv" type="text" maxlength="3"  OnKeyPress="formatar('000', this)">
+                <label for="card-value">numero do cartao</label>
+                <input id="card-value" type="text"  maxlength="19" OnKeyPress="formatar('0000 0000 0000 0000', this)" >
+                <label for="name-card">nome do cartão</label>
+                <input id="name-card" type="text">
+                <label for="data-card">data de validade</label>
+                <input id="data-card" type="text" maxlength="5"  OnKeyPress="formatar('00/00', this)">
+                <label for="cvv-card">cvv</label>
+                <input id="cvv-card" type="text" maxlength="3"  OnKeyPress="formatar('000', this)">
                 <button type="button" id="btn">Enviar</button>
             </form>
         </div>

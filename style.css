@@ -127,11 +127,11 @@ body{
 .card-text.back{
     align-self: flex-start;
 }
-.card-content:has(#cvv:focus) .card-back{
+.card-content:has(#cvv-card:focus) .card-back{
     opacity: 1;
     transform: rotateY(0deg);
 }
-.card-content:has(#cvv:focus) .card-front{
+.card-content:has(#cvv-card:focus) .card-front{
     transform: rotateY(-180deg);
     opacity: 0;
 }
